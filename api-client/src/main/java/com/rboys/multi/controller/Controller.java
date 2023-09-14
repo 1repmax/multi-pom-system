@@ -21,7 +21,6 @@ public class Controller {
 
     @RequestMapping(value = "/api", method = RequestMethod.GET)
     public String message() {
-        service.serve("Raivo");
-        return "string";
+        return service.serve("Raivo");
     }
 }

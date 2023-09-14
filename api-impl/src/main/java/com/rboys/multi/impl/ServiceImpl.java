@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 public class ServiceImpl implements com.rboys.multi.api.Service {
 
 	@Override
-	public void serve(String message) {
-		System.out.println("Serving from ServiceImpl class");
+	public String serve(String message) {
+		return "Character sequence " + message + " served from ServiceImpl class";
 	}
 }

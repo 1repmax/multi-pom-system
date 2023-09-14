@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 public class AnotherApiImpl implements com.rboys.multi.api.Service {
 
 	@Override
-	public void serve(String message) {
-		System.out.println("Serving from AnotherApiImpl class");
+	public String serve(String message) {
+		return "Character sequence " + message + " served from AnotherApiImpl class";
 	}
 }
